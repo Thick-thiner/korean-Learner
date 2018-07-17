@@ -16,6 +16,9 @@ mongo.connect('mongodb://localhost:27017/thick',function (err, dbs) {
     var db = dbs.db('thick');
 
     app.use('/public', express.static(process.cwd() + '/public')); //app.use和express.static将/public绑定到了/public。现在当/public被引用的时候，node就知道文件的地方了。
+    app.use('/pages', express.static(process.cwd() + '/public/html'));
+    app.use('/audios', express.static(process.cwd() + '/public/audios'));
+    app.use('/images', express.static(process.cwd() + '/public/images'));
     app.use('/controllers', express.static(process.cwd() + '/js/controllers'));
 
     routes(app, db);
