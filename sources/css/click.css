@@ -4,18 +4,14 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: 'Hi Melody', cursive;
-    font-size: 16px;
-    background-color: pink;
 }
-
-.container p {
+.allView {
     margin: 0;
     padding: 0;
     list-style-type: none;
     font-family: 'Hi Melody', cursive;
     font-size: 16px;
-    background-color: pink;
+    background-color: snow;
 }
 
 p {
@@ -24,7 +20,6 @@ p {
 
 .container p {
     text-align: center;
-    padding: 0;
 }
 
 /****** Logo Div Styling ******/
@@ -77,7 +72,8 @@ img {
 }
 
 .content div div{
-    width: 49%;
+    width: 48.9%;
+    background-color: seashell;
     float: left;
     text-align: center;
     padding-top: 10%;

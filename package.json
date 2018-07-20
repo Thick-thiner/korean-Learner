@@ -9,6 +9,7 @@
   "author": "shuang",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.7.2",
     "express": "^4.16.3",
     "mongodb": "^3.1.0-beta4"
   }
