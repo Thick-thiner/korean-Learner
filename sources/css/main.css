@@ -5,9 +5,10 @@ body {
     padding: 0;
     list-style-type: none;
 }
-.container {
+.clementine-text {
     margin: 0;
     padding: 0;
+    text-align: center;
     list-style-type: none;
     font-family: 'Hi Melody', cursive;
     font-size: 16px;
@@ -16,19 +17,25 @@ body {
 
 /*content area*/
 .content {
-    margin: 0 auto;
+    margin: 10pt 10pt;
     padding: 0;
     width: 100%;
     background-color: snow;
+
 }
 
 .content .bigButton{
-    width: 48.9%;
-    background-color: seashell;
+    width: 100pt;
+    height: 100pt;
+    background-color: salmon;
     float: left;
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
     margin: 5px;
     border: 2px solid white;
+}
+
+.content .bigButton a{
+    color: white;
+    position: relative;
+    top: 50%;
 }

@@ -23,6 +23,7 @@ mongo.connect('mongodb://localhost:27017/thick',function (err, dbs) {
     app.use('/audios', express.static(process.cwd() + '/sources/audios'));
     app.use('/images', express.static(process.cwd() + '/sources/images'));
 
+
     //js
     app.use('/koLearnerControllers', express.static(process.cwd() + '/development/koLearner/client/controllers'));
 
