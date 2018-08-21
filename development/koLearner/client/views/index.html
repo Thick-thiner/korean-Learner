@@ -25,19 +25,37 @@
     </div>
 
     <div class="content">
-        <div>
+        <div class="menu">
             <div class="bigButton">
-                <a type="button" href="/koLearner/listen.html"><img src="/images/listen.png" height="50" width="50" alt="listen" /></a>
+                <!--<a type="button" href="/koLearner/listen.html">-->
+                <a type="button" ng-click="changeToListen()">
+                    <img src="/images/listen.png" height="50" width="50" alt="listening" />
+                </a>
             </div>
             <div class="bigButton">
-                <a type="button" href="/koLearner/speak.html">说</a>
+                <!--<a type="button" href="/koLearner/speak.html">-->
+                <a type="button" ng-click="changeToSpeak()">
+                    <img src="/images/speak.png" height="50" width="50" alt="speaking" />
+                </a>
             </div>
             <div class="bigButton">
-                <a type="button" href="/koLearner/read.html">读</a>
+                <!--<a type="button" href="/koLearner/read.html">-->
+                <a type="button" ng-click="changeToRead()">
+                    <img src="/images/read.png" height="50" width="50" alt="reading" />
+                </a>
             </div>
             <div class="bigButton">
-                <a type="button" href="/koLearner/write.html">写</a>
+                <!--<a type="button" href="/koLearner/write.html">-->
+                <a type="button" ng-click="changeToWrite()">
+                    <img src="/images/write.png" height="50" width="50" alt="writing" />
+                </a>
             </div>
+        </div>
+        <div class="contentPage">
+            <p id="listenPage">1</p>
+            <p id="speakPage">2</p>
+            <p id="readPage">3</p>
+            <p id="writePage">4</p>
         </div>
     </div>
 

@@ -27,7 +27,15 @@ body {
     font-size: 20px;
 }
 
-.content .bigButton{
+.content .menu{
+    padding-top: 1pt;
+    height: 432pt;
+    width: 110pt;
+    float:left;
+}
+
+
+.content .menu .bigButton{
     width: 100pt;
     height: 100pt;
     background-color: skyblue;
@@ -38,14 +46,20 @@ body {
     border-radius:50%;
 }
 
-.content .bigButton a{
-    color: white;
+.content .menu .bigButton a img{
+    width: 100pt;
+    height: 100pt;
+    border-radius:50%;
+}
+
+.content .contentPage{
+    float:left;
+    margin-left: 20px;
+    padding-top: 1pt;
+    height: 432pt;
+    width: 700pt;
+    background-color: skyblue;
     position: relative;
-    top: 50%;
+    border-radius: 25%;
 }
-
-.content .bigButton a img{
-    background-color: black;
-}
-
 

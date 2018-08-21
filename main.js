@@ -6,7 +6,7 @@ var mongo = require('mongodb').MongoClient;//mongoClient()是可以使用类似c
 
 var app = express();
 
-mongo.connect('mongodb://localhost:27017/thick',function (err, dbs) {
+mongo.connect('mongodb://localhost:27017/thick', { useNewUrlParser: true }, function (err, dbs) {
     if(err){
         throw new Error('Datebase failed to connect!');
     }else{
