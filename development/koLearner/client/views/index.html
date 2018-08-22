@@ -18,10 +18,10 @@
 </head>
 <body>
 
-<div ng-controller="learnerController" class="allView">
+<div ng-app="kolearner" ng-controller="learnerController" class="allView">
 <div class="container">
     <div>
-        <p class="clementine-text">---韩语学习---</p>
+        <p class="clementine-text">韩语学习者</p>
     </div>
 
     <div class="content">
@@ -52,10 +52,21 @@
             </div>
         </div>
         <div class="contentPage">
-            <p id="listenPage">1</p>
-            <p id="speakPage">2</p>
-            <p id="readPage">3</p>
-            <p id="writePage">4</p>
+            <div id="homePage" style="display:block">
+                <h1>---每天全方位进步---</h1>
+            </div>
+            <div id="listenPage" style="display:none">
+                <h1>---今日听力小短文---</h1>
+            </div>
+            <div id="speakPage" style="display:none">
+                <h1>---和秀雅学对话---</h1>
+            </div>
+            <div id="readPage" style="display:none">
+                <h1>---今日阅读小短文---</h1>
+            </div>
+            <div id="writePage" style="display:none">
+                <h1>---写下今天所发生的事情---</h1>
+            </div>
         </div>
     </div>
 

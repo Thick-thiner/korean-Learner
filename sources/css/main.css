@@ -7,16 +7,17 @@ body {
 }
 
 .container {
-    background-color: snow;
+    background-color: skyblue;
 }
 
 .clementine-text {
     margin: 0;
-    padding: 0;
-    text-align: center;
+    padding-left: 2pt;
+    padding-top: 2pt;
     list-style-type: none;
     font-family: 'Hi Melody', cursive;
     font-size: 16px;
+    color: lightcoral;
 }
 
 /*content area*/
@@ -33,7 +34,6 @@ body {
     width: 110pt;
     float:left;
 }
-
 
 .content .menu .bigButton{
     width: 100pt;
@@ -61,5 +61,18 @@ body {
     background-color: skyblue;
     position: relative;
     border-radius: 25%;
+}
+
+.content .contentPage div{
+    background-color: white;
+    height: 332pt;
+    width: 600pt;
+    margin-left: 50pt;
+    margin-top: 50pt;
+    position: absolute;
+}
+
+.content .contentPage div h1{
+    text-align: center;
 }
 

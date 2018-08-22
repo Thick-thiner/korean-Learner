@@ -26,6 +26,7 @@ mongo.connect('mongodb://localhost:27017/thick', { useNewUrlParser: true }, func
 
     //js
     app.use('/koLearnerControllers', express.static(process.cwd() + '/development/koLearner/client/controllers'));
+    app.use('/koLearnerModules', express.static(process.cwd() + '/development/koLearner/client/modules'));
 
     routes(app, db);
 

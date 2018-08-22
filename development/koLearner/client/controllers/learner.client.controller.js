@@ -1,9 +1,10 @@
 
 // var mongoose = require('mongoose');
 // var User = mongoose.model('user');
+'use strict';
+var app = angular.module("kolearner", []);
 
-
-angular.module('kolearner').controller('learnerController', ['$scope',function ($scope)
+app.controller('learnerController', ['$scope',function ($scope)
 {
     // var UserService = $resource('/api/users');
 
@@ -59,6 +60,7 @@ angular.module('kolearner').controller('learnerController', ['$scope',function (
 
 //click----------------------------------------------------------------------------------------------------------
             $scope.changeToListen = function () {
+                document.getElementById("homePage").style.display = "none";
                 document.getElementById("listenPage").style.display = "block";
                 document.getElementById("speakPage").style.display = "none";
                 document.getElementById("readPage").style.display = "none";
@@ -66,6 +68,7 @@ angular.module('kolearner').controller('learnerController', ['$scope',function (
             };
 
             $scope.changeToSpeak = function () {
+                document.getElementById("homePage").style.display = "none";
                 document.getElementById("listenPage").style.display = "none";
                 document.getElementById("speakPage").style.display = "block";
                 document.getElementById("readPage").style.display = "none";
@@ -74,6 +77,7 @@ angular.module('kolearner').controller('learnerController', ['$scope',function (
             };
 
             $scope.changeToRead = function () {
+                document.getElementById("homePage").style.display = "none";
                 document.getElementById("listenPage").style.display = "none";
                 document.getElementById("speakPage").style.display = "none";
                 document.getElementById("readPage").style.display = "block";
@@ -81,6 +85,7 @@ angular.module('kolearner').controller('learnerController', ['$scope',function (
             };
 
             $scope.changeToWrite = function () {
+                document.getElementById("homePage").style.display = "none";
                 document.getElementById("listenPage").style.display = "none";
                 document.getElementById("speakPage").style.display = "none";
                 document.getElementById("readPage").style.display = "none";
